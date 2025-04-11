@@ -28,7 +28,6 @@ Fady_finance_agent= Agent(
 
 import streamlit as st
 
-st.set_page_config(page_title="Finance Assistant", page_icon="💰", layout="wide")
 # Custom Title and Slogan with color
 st.markdown("""
     <style>
