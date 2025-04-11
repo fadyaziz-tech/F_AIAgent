@@ -52,7 +52,7 @@ with st.sidebar:
     st.markdown("*Built with Streamlit and AI-powered Agents*")
 
 if page == "Ask a Question":
-    st.write("Hello Iam AI-Assistant Please Enter your financial iquery below:")
+    st.write("Hello Iam AI-Assistant Please Enter your financial inquery below:")
     user_query = st.text_input("Your question:", "")
 
     if user_query:
