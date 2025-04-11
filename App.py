@@ -31,7 +31,23 @@ import streamlit as st
 st.set_page_config(page_title="Finance Assistant", page_icon="💰", layout="wide")
 st.title("💰 Fady Finance Assistant")
 st.markdown("### Get real-time financial insights using my Sample App")
-
+# Custom Title and Slogan with color
+st.markdown("""
+    <style>
+        .title {
+            font-size: 40px;
+            color: #4CAF50;  /* Green color for the title */
+            font-weight: bold;
+        }
+        .slogan {
+            font-size: 24px;
+            color: #FF6347;  /* Tomato color for slogan */
+            font-style: italic;
+        }
+    </style>
+    <div class="title">💰 Fady Finance Assistant</div>
+    <div class="slogan">Get real-time financial insights using my Sample App</div>
+""", unsafe_allow_html=True)
 with st.sidebar:
     st.header("Navigation")
     page = st.radio("Select an option:", ["Ask a Question", "About"], index=0)
@@ -50,7 +66,13 @@ if page == "Ask a Question":
         st.markdown("### Response:")
         st.markdown(clean_response, unsafe_allow_html=True)
 
+# About page content
 elif page == "About":
-    st.subheader("About Fady's sample Finance Assistant")
-    st.write("this Finance Assistant is an AI-powered tool designed to provide real-time financial insights and information, helping users make informed financial decisions," \
-    "this AI-Assistant built using llama and built with Streamlit , Although this is a sample agent, it reflects how this tool can assist treasury professionals and others in their daily tasks by providing instant real-time data. This allows them to free up time for more critical and strategic decisions")
+    st.subheader("About Fady's Sample Finance Assistant")
+    st.write("""
+        This Finance Assistant is an AI-powered tool designed to provide real-time financial insights and information,
+        helping users make informed financial decisions. The AI-Assistant is built using Llama and Streamlit. 
+        Although this is a sample agent, it reflects how this tool can assist treasury professionals and others in 
+        their daily tasks by providing instant real-time data. This allows them to free up time for more critical and 
+        strategic decisions.
+    """)
