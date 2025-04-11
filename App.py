@@ -8,12 +8,13 @@ import os
 load_dotenv()
 
 openai_key = os.getenv("")
+groq_api_key = os.getenv("GROQ_API_KEY")  # Ensure you are getting the correct variable
 
 # Set the API key directly in the Groq initialization
 
 # Create an agent instance
 Fady_finance_agent= Agent(
-    model =Groq(id ="llama-3.3-70b-versatile",api_key=os.getenv("GROQ_API_KEY")), 
+    model =Groq(id ="llama-3.3-70b-versatile",api_key=groq_api_key), 
     #model =OpenAIChat(id ="gpt-4o",api_key=OPENAI_API_KEY),
     tools = [YFinanceTools(stock_price=True ,analyst_recommendations=True,stock_fundamentals=True)],
     show_tool_calls=True,
@@ -22,8 +23,6 @@ Fady_finance_agent= Agent(
         "Use tables to display data where applicable."
     ]
 )
-
-Fady_finance_agent.print_response("WHAT IS TREASURY MANAGEMENT")
 
 # app.py
 
