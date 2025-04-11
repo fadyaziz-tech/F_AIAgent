@@ -65,7 +65,7 @@ if page == "Ask a Question":
 
 # About page content
 elif page == "About":
-    st.subheader("About Fady's Sample Finance Assistant")
+    st.subheader("About this Sample Finance Assistant")
     st.write("""
         This Finance Assistant is an AI-powered tool designed to provide real-time financial insights and information,
         helping users make informed financial decisions. The AI-Assistant is built using Llama and Streamlit. 
