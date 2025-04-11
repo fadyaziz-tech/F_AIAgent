@@ -29,8 +29,6 @@ Fady_finance_agent= Agent(
 import streamlit as st
 
 st.set_page_config(page_title="Finance Assistant", page_icon="💰", layout="wide")
-st.title("💰 Fady Finance Assistant")
-st.markdown("### Get real-time financial insights using my Sample App")
 # Custom Title and Slogan with color
 st.markdown("""
     <style>
