@@ -42,7 +42,7 @@ st.markdown("""
             font-style: italic;
         }
     </style>
-    <div class="title">💰 Fady Finance Assistant</div>
+    <div class="title">💰Finance Assistant</div>
     <div class="slogan">Get real-time financial insights using my Sample App</div>
 """, unsafe_allow_html=True)
 with st.sidebar:
