@@ -30,7 +30,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Finance Assistant", page_icon="💰", layout="wide")
 st.title("💰 Fady Finance Assistant")
-st.markdown("### Get real-time financial insights and web-based information")
+st.markdown("### Get real-time financial insights using my Sample App")
 
 with st.sidebar:
     st.header("Navigation")
@@ -39,7 +39,7 @@ with st.sidebar:
     st.markdown("*Built with Streamlit and AI-powered Agents*")
 
 if page == "Ask a Question":
-    st.write("Enter your financial or web-related query below:")
+    st.write("Hello Iam AI-Assistant Please Enter your financial query below:")
     user_query = st.text_input("Your question:", "")
 
     if user_query:
@@ -51,5 +51,6 @@ if page == "Ask a Question":
         st.markdown(clean_response, unsafe_allow_html=True)
 
 elif page == "About":
-    st.subheader("About Finance Assistant")
-    st.write("Finance Assistant is an AI-powered tool designed to provide real-time financial insights and web-based information.")
+    st.subheader("About Fady's sample Finance Assistant")
+    st.write("this Finance Assistant is an AI-powered tool designed to provide real-time financial insights and information, helping users make informed financial decisions," \
+    "this AI-Assistant built using llama and built with Streamlit , Although this is a sample agent, it reflects how this tool can assist treasury professionals and others in their daily tasks by providing instant real-time data. This allows them to free up time for more critical and strategic decisions")
